@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Gesture Recognition</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+    <script>
+        var socket = io();
+        socket.on('update_string', function(data) {
+            document.getElementById('recognized-string').innerText = data;
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Hand Gesture Recognition</h1>
+        <div class="video-container">
+            <img src="{{ url_for('video_feed') }}" alt="Video Feed">
+        </div>
+
+        <h2>Recognized String:</h2>
+        <p id="recognized-string">{{ recognized_string }}</p>
+    </div>
+</body>
+</html>
