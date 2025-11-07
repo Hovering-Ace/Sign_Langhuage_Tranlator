@@ -38,4 +38,10 @@ By incorporating a **blank token**, the system learns to detect pauses between g
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/30f5ec67-0f7c-4e9d-9a8d-3d7554b4dd4d" />
 ##fig3
 
+## 👥 Contributors
+- Jatin  
+- Prianshu Chauhan  
+
+## ✍️ Authored by
+**Jatin**
 
